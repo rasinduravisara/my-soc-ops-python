@@ -1,14 +1,14 @@
-<div class="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-    <div class="bg-white rounded-xl p-6 max-w-xs w-full text-center shadow-xl animate-[bounce_0.5s_ease-out]">
-        <div class="text-5xl mb-4">🎉</div>
-        <h2 class="text-3xl font-bold text-amber-500 mb-2">BINGO!</h2>
-        <p class="text-gray-600 mb-6">You completed a line!</p>
+<div class="fixed inset-0" style="background:rgba(26,0,51,0.95);display:flex;align-items:center;justify-content:center;padding:1rem;z-index:50;">
+    <div style="background:#1a0033;border:4px double #ff00cc;box-shadow:0 0 24px #00fff7,0 0 8px #ff00cc;border-radius:1rem;padding:2rem;max-width:20rem;width:100%;text-align:center;animation:bounce_0.5s_ease-out;">
+        <div style="font-size:3rem;margin-bottom:1rem;text-shadow:0 0 8px #ff00cc;">🎉</div>
+        <h2 style="font-family:'Press Start 2P','VT323',monospace;font-size:2rem;color:#00fff7;text-shadow:0 0 8px #ff00cc,2px 2px 0 #000;margin-bottom:0.5rem;">BINGO!</h2>
+        <p style="color:#fffbe7;font-family:'VT323',monospace;font-size:1.1rem;margin-bottom:1.5rem;">You completed a line!</p>
 
         <button
             hx-post="/dismiss-modal"
             hx-target="#game-container"
             hx-swap="outerHTML"
-            class="w-full bg-accent text-white font-semibold py-3 px-6 rounded-lg active:bg-accent-light transition-colors">
+            class="retro-btn w-full">
             Keep Playing
         </button>
     </div>
